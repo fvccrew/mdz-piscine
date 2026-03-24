@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MDZ Piscine — Pisciniste à Cavalaire-sur-Mer</title>
+  <meta name="description" content="MDZ Piscine, votre pisciniste de référence sur la Côte d'Azur. Construction, rénovation et entretien de piscines à Cavalaire-sur-Mer et dans le Golfe de Saint-Tropez." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Curseur personnalisé -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- ============================================
+       NAVIGATION (présente sur toutes les pages sauf intro)
+       ============================================ -->
+  <nav class="nav" id="nav-principale">
+    <a class="nav-logo" data-page="accueil">
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C8 2 4 8 4 13c0 4.4 3.6 8 8 8s8-3.6 8-8c0-5-4-11-8-11z"/>
+          <path d="M4 13c2-2 4-2 6 0s4 2 6 0s4-2 6 0" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+        </svg>
+      </div>
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">MDZ Piscine</span>
+        <span class="nav-logo-sub">Cavalaire — Golfe de Saint-Tropez</span>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a data-page="accueil">Accueil</a></li>
+      <li><a data-page="apropos">À propos</a></li>
+      <li><a data-page="realisations">Réalisations</a></li>
+      <li><a data-page="contact" class="nav-contact-btn">Nous contacter</a></li>
+    </ul>
+
+    <!-- Burger mobile -->
+    <button class="nav-burger" id="navBurger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+
+  <!-- ============================================
+       PAGE INTRO — Mur de photos animé
+       ============================================ -->
+  <div class="page" id="page-intro">
+
+    <div class="photo-grid" id="photoGrid"></div>
+    <div class="grid-overlay"></div>
+
+    <div class="intro-center">
+      <div class="intro-logo-ring">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C8.5 2 5 7.5 5 12.5c0 3.9 3.1 7 7 7s7-3.1 7-7C19 7.5 15.5 2 12 2z"/>
+        </svg>
+      </div>
+      <p class="intro-eyebrow">Cavalaire-sur-Mer &nbsp;·&nbsp; Golfe de Saint-Tropez</p>
+      <h1 class="intro-titre">MDZ<br><em>Piscine</em></h1>
+      <div class="intro-sep"></div>
+      <p class="intro-sub">Pisciniste &nbsp;·&nbsp; Construction &amp; Rénovation &nbsp;·&nbsp; Côte d'Azur</p>
+      <button class="btn-entrer">
+        Découvrir
+        <span class="arrow"></span>
+      </button>
+    </div>
+
+    <div class="slide-indicators" id="introDots"></div>
+    <div class="slide-counter" id="slideCounter">01 / 05</div>
+
+  </div><!-- /page-intro -->
+
+
+  <!-- ============================================
+       PAGE ACCUEIL
+       ============================================ -->
+  <div class="page" id="page-accueil">
+
+    <!-- ── HERO ── -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow reveal-hero">Pisciniste depuis 2008 · Cavalaire-sur-Mer</p>
+        <h1 class="hero-titre reveal-hero">
+          L'art de créer<br>
+          <em>votre piscine</em><br>
+          de rêve
+        </h1>
+        <p class="hero-desc reveal-hero">
+          MDZ Piscine conçoit, construit et entretient des piscines d'exception sur toute la Côte d'Azur. De Cavalaire à Saint-Tropez, nous transformons votre extérieur en un espace de vie unique.
+        </p>
+        <div class="hero-ctas reveal-hero">
+          <button class="btn-primary" data-page="contact">Demander un devis gratuit</button>
+          <button class="btn-secondary" data-page="realisations">Voir nos réalisations →</button>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+      <!-- Badges hero -->
+      <div class="hero-badges">
+        <div class="hero-badge"><span class="badge-num">16</span><span class="badge-label">ans d'expérience</span></div>
+        <div class="hero-badge-sep"></div>
+        <div class="hero-badge"><span class="badge-num">340+</span><span class="badge-label">piscines réalisées</span></div>
+        <div class="hero-badge-sep"></div>
+        <div class="hero-badge"><span class="badge-num">RGE</span><span class="badge-label">certifié</span></div>
+      </div>
+    </section>
+
+    <!-- ── À PROPOS ── -->
+    <section class="section-apropos">
+      <div class="apropos-visuel">
+        <div class="apropos-img-grande" style="background-image:url('https://images.pexels.com/photos/2363808/pexels-photo-2363808.jpeg?auto=compress&w=900')"></div>
+        <div class="apropos-img-petite" style="background-image:url('https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&w=500')"></div>
+        <div class="apropos-annee reveal">
+          <span class="annee-num">2008</span>
+          <span class="annee-label">Fondation</span>
+        </div>
+      </div>
+      <div class="apropos-texte">
+        <p class="section-label reveal">Notre histoire</p>
+        <h2 class="section-titre reveal reveal-delay-1">Une passion<br>transmise <em>depuis 16 ans</em></h2>
+        <p class="apropos-corps reveal reveal-delay-2">
+          Fondée en 2008 par Marc Delvaux, MDZ Piscine est née d'une vision simple : créer des piscines qui durent, qui s'intègrent harmonieusement à leur environnement et qui procurent un plaisir sans limite à leurs propriétaires.
+        </p>
+        <p class="apropos-corps reveal reveal-delay-2" style="margin-top:1rem;">
+          Installés à Cavalaire-sur-Mer, nous connaissons parfaitement les exigences du littoral varois — l'ensoleillement exceptionnel, les vents du large, les sols argilo-calcaires. Cette expertise locale fait toute la différence.
+        </p>
+        <ul class="apropos-atouts reveal reveal-delay-3">
+          <li><span class="atout-icon">✦</span> Certifiés QUALIPISCINE &amp; RGE</li>
+          <li><span class="atout-icon">✦</span> Garantie décennale sur toutes nos constructions</li>
+          <li><span class="atout-icon">✦</span> Matériaux adaptés aux embruns méditerranéens</li>
+          <li><span class="atout-icon">✦</span> Devis gratuit sous 48 h, intervention sous 3 semaines</li>
+        </ul>
+        <button class="btn-primary reveal reveal-delay-3" data-page="contact" style="margin-top:2.5rem;">Nous rencontrer</button>
+      </div>
+    </section>
+
+    <!-- ── SERVICES ── -->
+    <section class="section-services">
+      <div class="section-header">
+        <div>
+          <p class="section-label reveal">Nos expertises</p>
+          <h2 class="section-titre reveal reveal-delay-1">Un accompagnement<br><em>de A à Z</em></h2>
+        </div>
+        <p class="section-intro-txt reveal">De la première esquisse à l'entretien saisonnier, MDZ Piscine est votre interlocuteur unique.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-num">01</div>
+          <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <h3 class="service-nom">Construction</h3>
+          <p class="service-desc">Piscines à débordement, miroir, naturelles ou traditionnelles. Conception 3D, permis de construire, réalisation clé en main.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-num">02</div>
+          <div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 8 12 12 14 14"/></svg></div>
+          <h3 class="service-nom">Rénovation</h3>
+          <p class="service-desc">Carrelage, liner, structure, filtration. Nous redonnons vie à votre bassin avec les techniques les plus modernes du marché.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-num">03</div>
+          <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3 class="service-nom">Entretien</h3>
+          <p class="service-desc">Contrats saisonniers ou annuels. Traitement de l'eau, hivernage, remise en route. Votre piscine toujours prête.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-num">04</div>
+          <div class="service-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <h3 class="service-nom">Domotique</h3>
+          <p class="service-desc">Pilotage depuis votre smartphone : éclairage, température, pompe à chaleur, couverture automatique.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-num">05</div>
+          <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg></div>
+          <h3 class="service-nom">Pool House</h3>
+          <p class="service-desc">Terrasse, plage immergée, jacuzzi, pool house. Un espace de vie complet autour de votre piscine.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-num">06</div>
+          <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+          <h3 class="service-nom">Bureau d'études</h3>
+          <p class="service-desc">Conception 3D, démarches administratives, permis de construire. Nous gérons tout pour un projet sans stress.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CHIFFRES CLÉS ── -->
+    <section class="section-chiffres">
+      <div class="chiffres-grid">
+        <div class="chiffre-item reveal"><div class="chiffre-num" data-target="16" data-suffix="+">0+</div><p class="chiffre-label">Années d'expérience</p></div>
+        <div class="chiffre-item reveal reveal-delay-1"><div class="chiffre-num" data-target="340" data-suffix="">0</div><p class="chiffre-label">Piscines réalisées</p></div>
+        <div class="chiffre-item reveal reveal-delay-2"><div class="chiffre-num" data-target="98" data-suffix="%">0%</div><p class="chiffre-label">Clients satisfaits</p></div>
+        <div class="chiffre-item reveal reveal-delay-3"><div class="chiffre-num" data-target="12" data-suffix="">0</div><p class="chiffre-label">Artisans qualifiés</p></div>
+      </div>
+    </section>
+
+    <!-- ── GALERIE PHOTOS ── -->
+    <section class="section-galerie">
+      <div class="galerie-header">
+        <p class="section-label reveal">Nos réalisations</p>
+        <h2 class="section-titre reveal reveal-delay-1">Chaque piscine,<br><em>une signature</em></h2>
+      </div>
+      <div class="galerie-mosaic" id="galerieMosaic"></div>
+      <div class="galerie-cta reveal">
+        <button class="btn-primary" data-page="realisations">Voir toutes les réalisations</button>
+      </div>
+    </section>
+
+    <!-- ── TÉMOIGNAGES ── -->
+    <section class="section-temoignages">
+      <div class="temoignages-header">
+        <p class="section-label reveal">Ils nous font confiance</p>
+        <h2 class="section-titre reveal reveal-delay-1">Ce que disent<br><em>nos clients</em></h2>
+      </div>
+      <div class="temoignages-slider" id="temoignagesSlider">
+        <div class="temoignage-track" id="temoignageTrack">
+
+          <div class="temoignage-card">
+            <div class="temoignage-etoiles">★★★★★</div>
+            <p class="temoignage-texte">« MDZ Piscine a transformé notre terrasse en véritable havre de paix. Du premier rendez-vous à la livraison, tout était parfait. La piscine à débordement vue sur mer est exactement ce dont nous rêvions. »</p>
+            <div class="temoignage-auteur">
+              <div class="auteur-avatar">SP</div>
+              <div><p class="auteur-nom">Sophie &amp; Pierre M.</p><p class="auteur-lieu">Cavalaire-sur-Mer, 2023</p></div>
+            </div>
+          </div>
+
+          <div class="temoignage-card">
+            <div class="temoignage-etoiles">★★★★★</div>
+            <p class="temoignage-texte">« Professionnalisme exemplaire. Marc et son équipe ont su s'adapter aux contraintes de notre terrain en pente. Le résultat dépasse toutes nos espérances. Je recommande sans hésiter. »</p>
+            <div class="temoignage-auteur">
+              <div class="auteur-avatar">JL</div>
+              <div><p class="auteur-nom">Jean-Louis R.</p><p class="auteur-lieu">Ramatuelle, 2023</p></div>
+            </div>
+          </div>
+
+          <div class="temoignage-card">
+            <div class="temoignage-etoiles">★★★★★</div>
+            <p class="temoignage-texte">« Rénovation complète de notre ancienne piscine. MDZ Piscine a géré tout de A à Z — liner, carrelage, système de filtration connecté. Le rendu est incroyable, comme une piscine neuve. »</p>
+            <div class="temoignage-auteur">
+              <div class="auteur-avatar">MC</div>
+              <div><p class="auteur-nom">Marie-Claire B.</p><p class="auteur-lieu">Sainte-Maxime, 2022</p></div>
+            </div>
+          </div>
+
+          <div class="temoignage-card">
+            <div class="temoignage-etoiles">★★★★★</div>
+            <p class="temoignage-texte">« Cinq ans de contrat d'entretien avec MDZ Piscine. Toujours ponctuel, toujours efficace. Notre eau est cristalline toute l'année. Une équipe de confiance que je recommande à tous mes voisins. »</p>
+            <div class="temoignage-auteur">
+              <div class="auteur-avatar">AL</div>
+              <div><p class="auteur-nom">Antoine L.</p><p class="auteur-lieu">La Croix-Valmer, 2024</p></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="temoignages-nav">
+        <button class="temo-btn" id="temoPrev">←</button>
+        <div class="temo-dots" id="temoDots"></div>
+        <button class="temo-btn" id="temoNext">→</button>
+      </div>
+    </section>
+
+    <!-- ── ZONE D'INTERVENTION ── -->
+    <section class="section-zone">
+      <div class="zone-texte">
+        <p class="section-label reveal">Zone d'intervention</p>
+        <h2 class="section-titre reveal reveal-delay-1">Golfe de Saint-Tropez<br><em>&amp; alentours</em></h2>
+        <p class="zone-desc reveal reveal-delay-2">
+          Nous intervenons dans un rayon de 60 km autour de Cavalaire-sur-Mer, couvrant l'ensemble du Var côtier et les Alpes-Maritimes limitrophes.
+        </p>
+        <ul class="zone-villes reveal reveal-delay-3">
+          <li>Cavalaire-sur-Mer</li>
+          <li>Saint-Tropez</li>
+          <li>Ramatuelle</li>
+          <li>La Croix-Valmer</li>
+          <li>Sainte-Maxime</li>
+          <li>Grimaud</li>
+          <li>Le Lavandou</li>
+          <li>Hyères</li>
+        </ul>
+        <button class="btn-primary reveal reveal-delay-3" data-page="contact" style="margin-top:2.5rem;">Vérifier ma zone</button>
+      </div>
+      <div class="zone-carte reveal">
+        <div class="carte-visuel">
+          <div class="carte-point" style="top:38%;left:42%"><span class="point-pulse"></span><span class="point-label">Cavalaire</span></div>
+          <div class="carte-point" style="top:22%;left:62%"><span class="point-pulse"></span><span class="point-label">Saint-Tropez</span></div>
+          <div class="carte-point" style="top:28%;left:52%"><span class="point-pulse"></span><span class="point-label">Ramatuelle</span></div>
+          <div class="carte-point" style="top:18%;left:74%"><span class="point-pulse"></span><span class="point-label">Sainte-Maxime</span></div>
+          <div class="carte-point" style="top:50%;left:30%"><span class="point-pulse"></span><span class="point-label">Le Lavandou</span></div>
+          <div class="carte-point" style="top:62%;left:18%"><span class="point-pulse"></span><span class="point-label">Hyères</span></div>
+          <div class="carte-point" style="top:44%;left:55%"><span class="point-pulse"></span><span class="point-label">La Croix-Valmer</span></div>
+          <svg class="carte-svg" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 180 C60 160 100 200 150 180 C180 168 200 140 240 130 C280 120 320 140 370 120 L380 200 C340 220 280 210 240 220 C200 230 160 250 120 240 C80 230 40 220 20 210 Z" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.2)" stroke-width="1"/>
+            <path d="M20 210 C60 200 100 215 150 205 C200 195 250 210 300 200 C330 194 360 195 380 200" fill="none" stroke="rgba(0,180,216,0.3)" stroke-width="0.5" stroke-dasharray="4,4"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA FINAL ── -->
+    <section class="section-cta-final">
+      <div class="cta-final-bg" style="background-image:url('https://images.pexels.com/photos/1268871/pexels-photo-1268871.jpeg?auto=compress&w=1400')"></div>
+      <div class="cta-final-overlay"></div>
+      <div class="cta-final-content reveal">
+        <p class="section-label" style="color:var(--or-clair);">Votre projet commence ici</p>
+        <h2 style="font-family:var(--font-titre);font-weight:300;font-size:clamp(2rem,5vw,4rem);color:#fff;line-height:1.1;margin:1rem 0 1.5rem;">
+          Prêt à créer votre<br><em style="font-style:italic;color:var(--turquoise-clair);">piscine de rêve ?</em>
+        </h2>
+        <p style="font-family:var(--font-corps);font-weight:300;color:rgba(255,255,255,0.7);max-width:480px;margin:0 auto 2.5rem;line-height:1.8;">
+          Devis gratuit sous 48 h, visite sur site offerte. Contactez-nous et discutons de votre projet.
+        </p>
+        <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;">
+          <button class="btn-primary" data-page="contact">Demander un devis</button>
+          <a href="tel:+33494000000" class="btn-entrer" style="opacity:1;animation:none;">
+            04 94 00 00 00
+            <span class="arrow"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer-copy">© 2025 MDZ Piscine — Site fictif de démonstration — Tous droits réservés</p>
+      <span class="footer-logo">MDZ Piscine</span>
+      <ul class="footer-links">
+        <li><a data-page="accueil">Accueil</a></li>
+        <li><a data-page="realisations">Réalisations</a></li>
+        <li><a data-page="contact">Contact</a></li>
+        <li><a data-page="mentions">Mentions légales</a></li>
+      </ul>
+    </footer>
+
+  </div><!-- /page-accueil -->
+
+
+  <!-- ============================================
+       PAGE RÉALISATIONS
+       ============================================ -->
+  <div class="page" id="page-realisations">
+
+    <!-- Header -->
+    <div class="page-header-dark">
+      <p class="page-header-eyebrow">Portfolio · 340+ réalisations</p>
+      <h1 class="page-header-titre">Nos<br><em>réalisations</em></h1>
+      <p class="page-header-desc">Chaque projet est unique. Découvrez quelques-unes de nos créations sur la Côte d'Azur.</p>
+    </div>
+
+    <!-- Galerie -->
+    <div class="realisations-galerie">
+
+      <div class="realisation-item">
+        <div class="realisation-img" style="background-image:url('https://images.pexels.com/photos/31817156/pexels-photo-31817156.jpeg?auto=compress&w=800')"></div>
+      </div>
+      <div class="realisation-item">
+        <div class="realisation-img" style="background-image:url('https://images.pexels.com/photos/261327/pexels-photo-261327.jpeg?auto=compress&w=800')"></div>
+      </div>
+      <div class="realisation-item">
+        <div class="realisation-img" style="background-image:url('https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&w=800')"></div>
+      </div>
+
+      <div class="realisation-item">
+        <div class="realisation-img" style="background-image:url('https://images.pexels.com/photos/3209049/pexels-photo-3209049.jpeg?auto=compress&w=800')"></div>
+      </div>
+      <div class="realisation-item">
+        <div class="realisation-img" style="background-image:url('https://images.pexels.com/photos/9119738/pexels-photo-9119738.jpeg?auto=compress&w=800')"></div>
+      </div>
+      <div class="realisation-item">
+        <div class="realisation-img" style="background-image:url('https://images.pexels.com/photos/24807132/pexels-photo-24807132.jpeg?auto=compress&w=800')"></div>
+      </div>
+
+      <div class="realisation-item">
+        <div class="realisation-img" style="background-image:url('https://images.pexels.com/photos/5326898/pexels-photo-5326898.jpeg?auto=compress&w=800')"></div>
+      </div>
+      <div class="realisation-item">
+        <div class="realisation-img" style="background-image:url('https://images.pexels.com/photos/1268871/pexels-photo-1268871.jpeg?auto=compress&w=800')"></div>
+      </div>
+      <div class="realisation-item">
+        <div class="realisation-img" style="background-image:url('https://images.pexels.com/photos/29453302/pexels-photo-29453302.jpeg?auto=compress&w=800')"></div>
+      </div>
+
+      <div class="realisation-item">
+        <div class="realisation-img" style="background-image:url('https://images.pexels.com/photos/26859048/pexels-photo-26859048.jpeg?auto=compress&w=800')"></div>
+      </div>
+      <div class="realisation-item">
+        <div class="realisation-img" style="background-image:url('https://images.pexels.com/photos/31817156/pexels-photo-31817156.jpeg?auto=compress&w=800')"></div>
+      </div>
+      <div class="realisation-item">
+        <div class="realisation-img" style="background-image:url('https://images.pexels.com/photos/15994062/pexels-photo-15994062.jpeg?auto=compress&w=800')"></div>
+      </div>
+
+      <div class="realisation-item">
+        <div class="realisation-img" style="background-image:url('https://images.pexels.com/photos/8085310/pexels-photo-8085310.jpeg?auto=compress&w=800')"></div>
+      </div>
+      <div class="realisation-item">
+        <div class="realisation-img" style="background-image:url('https://images.pexels.com/photos/8134745/pexels-photo-8134745.jpeg?auto=compress&w=800')"></div>
+      </div>
+      <div class="realisation-item">
+        <div class="realisation-img" style="background-image:url('https://images.pexels.com/photos/8414418/pexels-photo-8414418.jpeg?auto=compress&w=800')"></div>
+      </div>
+
+      <div class="realisation-item">
+        <div class="realisation-img" style="background-image:url('https://images.pexels.com/photos/903028/pexels-photo-903028.jpeg?auto=compress&w=800')"></div>
+      </div>
+      <div class="realisation-item">
+        <div class="realisation-img" style="background-image:url('https://images.pexels.com/photos/26859026/pexels-photo-26859026.jpeg?auto=compress&w=800')"></div>
+      </div>
+      <div class="realisation-item">
+        <div class="realisation-img" style="background-image:url('https://images.pexels.com/photos/105933/pexels-photo-105933.jpeg?auto=compress&w=800')"></div>
+      </div>
+
+      <div class="realisation-item">
+        <div class="realisation-img" style="background-image:url('https://images.pexels.com/photos/26859026/pexels-photo-26859026.jpeg?auto=compress&w=800')"></div>
+      </div>
+
+      <div class="realisation-item">
+        <div class="realisation-img" style="background-image:url('https://images.pexels.com/photos/16714960/pexels-photo-16714960.jpeg?auto=compress&w=800')"></div>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="realisations-cta">
+      <p class="section-label">Votre projet</p>
+      <h2 style="font-family:var(--font-titre);font-weight:300;font-size:clamp(1.8rem,4vw,3rem);color:var(--bleu-profond);margin:0.8rem 0 2rem;line-height:1.1;">
+        Votre piscine mérite<br><em style="font-style:italic;color:var(--turquoise);">le meilleur</em>
+      </h2>
+      <button class="btn-primary" data-page="contact">Démarrer votre projet</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer-copy">© 2025 MDZ Piscine — Site fictif de démonstration — Tous droits réservés</p>
+      <span class="footer-logo">MDZ Piscine</span>
+      <ul class="footer-links">
+        <li><a data-page="accueil">Accueil</a></li>
+        <li><a data-page="apropos">À propos</a></li>
+        <li><a data-page="realisations">Réalisations</a></li>
+        <li><a data-page="contact">Contact</a></li>
+        <li><a data-page="mentions">Mentions légales</a></li>
+      </ul>
+    </footer>
+
+  </div><!-- /page-realisations -->
+
+
+  <!-- ============================================
+       PAGE CONTACT
+       ============================================ -->
+  <div class="page" id="page-contact">
+
+    <div class="contact-wrapper">
+
+      <!-- Gauche -->
+      <div class="contact-gauche">
+        <div>
+          <p class="page-header-eyebrow" style="color:var(--or-clair);font-size:0.65rem;letter-spacing:0.5em;font-family:'Jost',sans-serif;font-weight:200;text-transform:uppercase;margin-bottom:1.2rem;">Parlons de votre projet</p>
+          <h1 class="contact-titre">
+            Construisons<br>
+            ensemble<br>
+            <em>votre rêve</em>
+          </h1>
+          <p class="contact-intro">
+            Un projet de piscine ? Une rénovation ? Une question ? Notre équipe vous répond sous 48 heures et vous propose une visite gratuite sur site.
+          </p>
+        </div>
+
+        <div class="contact-infos">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <p class="contact-info-label">Adresse</p>
+              <p class="contact-info-val">12 Avenue du Port<br>83240 Cavalaire-sur-Mer</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .73h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.63a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="contact-info-label">Téléphone</p>
+              <p class="contact-info-val">+33 (0)4 94 XX XX XX</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <p class="contact-info-label">Email</p>
+              <p class="contact-info-val">contact@mdz-piscine.fr</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <p class="contact-info-label">Horaires</p>
+              <p class="contact-info-val">Lun – Ven : 8h30 – 18h00<br>Sam : 9h00 – 13h00</p>
+            </div>
+          </div>
+        </div>
+      </div><!-- /contact-gauche -->
+
+      <!-- Droite : formulaire -->
+      <div class="contact-droite">
+        <h2 class="formulaire-titre">Votre demande</h2>
+
+        <form id="formulaire-contact">
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" for="prenom">Prénom</label>
+              <input class="form-input" type="text" id="prenom" name="prenom" placeholder="Jean" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="nom">Nom</label>
+              <input class="form-input" type="text" id="nom" name="nom" placeholder="Dupont" required />
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="jean@exemple.fr" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="telephone">Téléphone</label>
+              <input class="form-input" type="tel" id="telephone" name="telephone" placeholder="06 XX XX XX XX" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="type-projet">Type de projet</label>
+            <select class="form-select" id="type-projet" name="type-projet" required>
+              <option value="">Sélectionner…</option>
+              <option value="construction">Construction de piscine</option>
+              <option value="renovation">Rénovation</option>
+              <option value="entretien">Entretien annuel</option>
+              <option value="depannage">Dépannage / Urgence</option>
+              <option value="autre">Autre demande</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="commune">Commune</label>
+            <input class="form-input" type="text" id="commune" name="commune" placeholder="Cavalaire, Saint-Tropez, Sainte-Maxime…" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Décrivez votre projet</label>
+            <textarea class="form-textarea" id="message" name="message" placeholder="Taille souhaitée, budget indicatif, contraintes particulières…"></textarea>
+          </div>
+
+          <button type="submit" class="form-submit">
+            Envoyer ma demande
+            <span style="width:16px;height:1px;background:currentColor;display:inline-block;position:relative;">
+              <span style="position:absolute;right:0;top:-3px;width:5px;height:5px;border-right:1px solid currentColor;border-top:1px solid currentColor;transform:rotate(45deg);"></span>
+            </span>
+          </button>
+        </form>
+      </div><!-- /contact-droite -->
+
+    </div><!-- /contact-wrapper -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer-copy">© 2024 MDZ Piscine — Tous droits réservés</p>
+      <span class="footer-logo">MDZ Piscine</span>
+      <ul class="footer-links">
+        <li><a data-page="accueil">Accueil</a></li>
+        <li><a data-page="realisations">Réalisations</a></li>
+        <li><a data-page="contact">Contact</a></li>
+        <li><a data-page="mentions">Mentions légales</a></li>
+      </ul>
+    </footer>
+
+  </div><!-- /page-contact -->
+
+
+  <!-- ============================================
+       PAGE À PROPOS
+       ============================================ -->
+  <div class="page" id="page-apropos">
+
+    <!-- Header -->
+    <div class="apropos-header">
+      <div class="apropos-header-content">
+        <p class="page-header-eyebrow reveal-hero">Notre histoire</p>
+        <h1 class="apropos-header-titre reveal-hero">MDZ Piscine,<br><em>l'excellence</em><br>méditerranéenne</h1>
+        <p class="apropos-header-desc reveal-hero">Depuis 2008, nous créons des piscines d'exception sur la Côte d'Azur avec passion, expertise et un sens aigu du détail.</p>
+      </div>
+      <div class="apropos-header-visuel">
+        <div class="apropos-header-img" style="background-image:url('https://images.pexels.com/photos/1268871/pexels-photo-1268871.jpeg?auto=compress&w=1200')"></div>
+        <div class="apropos-header-overlay"></div>
+      </div>
+    </div>
+
+    <!-- Histoire / Timeline -->
+    <section class="apropos-histoire">
+      <div class="histoire-intro">
+        <p class="section-label reveal">Notre parcours</p>
+        <h2 class="section-titre reveal reveal-delay-1">16 ans de passion<br><em>et de savoir-faire</em></h2>
+      </div>
+      <div class="histoire-timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-annee">2008</div>
+          <div class="timeline-content">
+            <h3 class="timeline-titre">La fondation</h3>
+            <p class="timeline-texte">Marc Delvaux crée MDZ Piscine à Cavalaire-sur-Mer avec une équipe de 3 artisans. Premier chantier : une piscine à débordement à Ramatuelle. L'aventure commence.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal reveal-delay-1">
+          <div class="timeline-annee">2012</div>
+          <div class="timeline-content">
+            <h3 class="timeline-titre">Certification QUALIPISCINE</h3>
+            <p class="timeline-texte">MDZ Piscine obtient la certification QUALIPISCINE, gage de qualité et de professionnalisme. L'équipe atteint 6 collaborateurs. Plus de 80 piscines réalisées.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal reveal-delay-2">
+          <div class="timeline-annee">2016</div>
+          <div class="timeline-content">
+            <h3 class="timeline-titre">Label RGE & Domotique</h3>
+            <p class="timeline-texte">Obtention du label RGE (Reconnu Garant de l'Environnement). Lancement de notre offre domotique piscine connectée, une première sur le golfe de Saint-Tropez.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal reveal-delay-3">
+          <div class="timeline-annee">2020</div>
+          <div class="timeline-content">
+            <h3 class="timeline-titre">Bureau d'études intégré</h3>
+            <p class="timeline-texte">Création de notre bureau d'études interne. Conception 3D, gestion des permis, suivi de chantier : tout sous un même toit. 200 piscines au compteur.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal reveal-delay-4">
+          <div class="timeline-annee">2024</div>
+          <div class="timeline-content">
+            <h3 class="timeline-titre">Aujourd'hui</h3>
+            <p class="timeline-texte">12 artisans qualifiés, 340 piscines réalisées, 98% de clients satisfaits. MDZ Piscine est la référence pisciniste entre Cavalaire et Saint-Tropez.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Valeurs -->
+    <section class="apropos-valeurs">
+      <div class="valeurs-header">
+        <p class="section-label reveal">Ce qui nous définit</p>
+        <h2 class="section-titre reveal reveal-delay-1">Nos valeurs,<br><em>notre ADN</em></h2>
+      </div>
+      <div class="valeurs-grid">
+        <div class="valeur-card reveal">
+          <div class="valeur-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="valeur-titre">Qualité sans compromis</h3>
+          <p class="valeur-texte">Chaque piscine est construite avec des matériaux premium sélectionnés pour leur durabilité face aux conditions méditerranéennes — soleil intense, embruns, sols calcaires.</p>
+        </div>
+        <div class="valeur-card reveal reveal-delay-1">
+          <div class="valeur-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3 class="valeur-titre">Respect des délais</h3>
+          <p class="valeur-texte">Un chantier livré en retard, c'est une saison de baignade perdue. Nous planifions rigoureusement chaque étape et tenons nos engagements, toujours.</p>
+        </div>
+        <div class="valeur-card reveal reveal-delay-2">
+          <div class="valeur-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3 class="valeur-titre">Relation humaine</h3>
+          <p class="valeur-texte">Un interlocuteur dédié du premier rendez-vous à la livraison. Pas de sous-traitance anonyme — votre projet est suivi par les mêmes artisans du début à la fin.</p>
+        </div>
+        <div class="valeur-card reveal reveal-delay-3">
+          <div class="valeur-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 class="valeur-titre">Innovation</h3>
+          <p class="valeur-texte">Domotique, pompes à chaleur inverter, traitement UV, béton projeté… Nous intégrons les dernières technologies pour une piscine plus économique et plus confortable.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Équipe -->
+    <!-- Notre processus -->
+    <section class="apropos-processus">
+      <div class="processus-header">
+        <p class="section-label reveal">Comment on travaille</p>
+        <h2 class="section-titre reveal reveal-delay-1">Notre processus,<br><em>étape par étape</em></h2>
+      </div>
+      <div class="processus-grid">
+
+        <div class="processus-step reveal">
+          <div class="step-num">01</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <h3 class="step-titre">Visite sur site</h3>
+          <p class="step-texte">Gratuite et sans engagement. Nous venons chez vous analyser la configuration du terrain, l'ensoleillement, les contraintes d'accès et vos envies. Premier devis sous 48 h.</p>
+        </div>
+
+        <div class="processus-step reveal reveal-delay-1">
+          <div class="step-num">02</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>
+            </svg>
+          </div>
+          <h3 class="step-titre">Conception 3D</h3>
+          <p class="step-texte">Notre bureau d'études conçoit votre piscine en 3D. Vous visualisez le résultat final avant le premier coup de pelle — formes, matériaux, couleurs, aménagements.</p>
+        </div>
+
+        <div class="processus-step reveal reveal-delay-2">
+          <div class="step-num">03</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/>
+            </svg>
+          </div>
+          <h3 class="step-titre">Démarches admin.</h3>
+          <p class="step-texte">Déclaration préalable, permis de construire, conformité PLU… Nous gérons l'intégralité des démarches administratives à votre place.</p>
+        </div>
+
+        <div class="processus-step reveal reveal-delay-3">
+          <div class="step-num">04</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+            </svg>
+          </div>
+          <h3 class="step-titre">Construction</h3>
+          <p class="step-texte">Terrassement, structure béton, plomberie, électricité, revêtement, équipements. Chaque phase est assurée par nos artisans internes, jamais sous-traitée.</p>
+        </div>
+
+        <div class="processus-step reveal reveal-delay-4">
+          <div class="step-num">05</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <h3 class="step-titre">Livraison & formation</h3>
+          <p class="step-texte">Mise en eau, réglages des équipements, formation à l'utilisation et à l'entretien. Vous repartez avec un manuel personnalisé et le numéro direct de votre technicien.</p>
+        </div>
+
+        <div class="processus-step reveal reveal-delay-4">
+          <div class="step-num">06</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3 class="step-titre">Suivi & entretien</h3>
+          <p class="step-texte">Contrat d'entretien saisonnier, hivernage, remise en route, dépannage. MDZ Piscine reste à vos côtés bien après la livraison, pour que votre piscine soit parfaite chaque été.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="apropos-certifs">
+      <div class="certifs-contenu">
+        <p class="section-label reveal">Nos garanties</p>
+        <h2 class="section-titre reveal reveal-delay-1" style="color:var(--blanc);">Des certifications<br><em>qui font la différence</em></h2>
+        <p class="certifs-desc reveal reveal-delay-2">Nos accréditations ne sont pas de simples logos — elles représentent des années de formation, d'audits et d'engagement qualité.</p>
+        <div class="certifs-grid reveal reveal-delay-3">
+          <div class="certif-item">
+            <div class="certif-badge">RGE</div>
+            <p class="certif-nom">Reconnu Garant de l'Environnement</p>
+            <p class="certif-desc">Travaux éco-responsables, éligibles aux aides de l'État</p>
+          </div>
+          <div class="certif-item">
+            <div class="certif-badge">QP</div>
+            <p class="certif-nom">QUALIPISCINE Expert</p>
+            <p class="certif-desc">Plus haut niveau de certification de la profession</p>
+          </div>
+          <div class="certif-item">
+            <div class="certif-badge">10</div>
+            <p class="certif-nom">Garantie Décennale</p>
+            <p class="certif-desc">Couverture totale sur la structure pendant 10 ans</p>
+          </div>
+          <div class="certif-item">
+            <div class="certif-badge">2y</div>
+            <p class="certif-nom">Garantie Biennale</p>
+            <p class="certif-desc">Équipements et finitions garantis 2 ans</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="padding:6rem 8vw;text-align:center;background:var(--blanc);">
+      <p class="section-label reveal" style="text-align:center;">Travaillons ensemble</p>
+      <h2 class="section-titre reveal reveal-delay-1" style="text-align:center;margin-bottom:2rem;">Votre projet mérite<br><em>le meilleur</em></h2>
+      <div class="reveal reveal-delay-2" style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;">
+        <button class="btn-primary" data-page="contact">Demander un devis gratuit</button>
+        <button class="btn-secondary" data-page="realisations" style="color:var(--bleu-profond);">Voir nos réalisations →</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer-copy">© 2025 MDZ Piscine — Site fictif de démonstration — Tous droits réservés</p>
+      <span class="footer-logo">MDZ Piscine</span>
+      <ul class="footer-links">
+        <li><a data-page="accueil">Accueil</a></li>
+        <li><a data-page="apropos">À propos</a></li>
+        <li><a data-page="realisations">Réalisations</a></li>
+        <li><a data-page="contact">Contact</a></li>
+        <li><a data-page="mentions">Mentions légales</a></li>
+      </ul>
+    </footer>
+
+  </div><!-- /page-apropos -->
+
+
+  <!-- ============================================
+       PAGE MENTIONS LÉGALES & CONFIDENTIALITÉ
+       ============================================ -->
+  <div class="page" id="page-mentions">
+
+    <div class="mentions-header">
+      <p class="page-header-eyebrow">Informations légales</p>
+      <h1 class="page-header-titre">Mentions légales &amp;<br><em>Politique de confidentialité</em></h1>
+    </div>
+
+    <div class="mentions-contenu">
+
+      <!-- Avertissement fictif -->
+      <div class="mentions-bloc mentions-bloc-warning">
+        <p class="mentions-texte" style="color:#7a4f00;font-weight:400;">
+          ⚠️ <strong>Site de démonstration</strong> — Ce site a été créé à titre d'exemple pour un portfolio de développeur web. Tous les contenus (textes, coordonnées, chiffres, noms de personnes) sont entièrement fictifs. Seules les ressources tierces (photos, polices) sont réelles et utilisées conformément à leurs licences respectives.
+        </p>
+      </div>
+
+      <!-- Éditeur -->
+      <div class="mentions-bloc">
+        <h2 class="mentions-titre">1. Éditeur du site</h2>
+        <p class="mentions-texte">Ce site est édité par la société fictive <strong>MDZ Piscine</strong>.</p>
+        <div class="mentions-infos">
+          <p><span>Raison sociale</span> MDZ Piscine (fictif)</p>
+          <p><span>Adresse</span> 12 Avenue du Port, 83240 Cavalaire-sur-Mer (fictif)</p>
+          <p><span>Téléphone</span> +33 (0)4 94 00 00 00 (fictif)</p>
+          <p><span>Email</span> contact@mdz-piscine.fr (fictif)</p>
+          <p><span>SIRET</span> 000 000 000 00000 (fictif)</p>
+          <p><span>Directeur de publication</span> Marc Delvaux (fictif)</p>
+        </div>
+      </div>
+
+      <!-- Hébergement -->
+      <div class="mentions-bloc">
+        <h2 class="mentions-titre">2. Hébergement</h2>
+        <p class="mentions-texte">
+          Ce site est hébergé par <strong>GitHub Pages</strong>, un service gratuit de GitHub, Inc.
+        </p>
+        <div class="mentions-infos">
+          <p><span>Hébergeur</span> GitHub, Inc.</p>
+          <p><span>Adresse</span> 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis</p>
+          <p><span>Site web</span> <a href="https://pages.github.com" target="_blank" rel="noopener">pages.github.com</a></p>
+          <p><span>Politique de confidentialité</span> <a href="https://docs.github.com/fr/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener">GitHub Privacy Statement</a></p>
+        </div>
+        <p class="mentions-texte" style="margin-top:1rem;">
+          GitHub Pages peut collecter des données techniques de navigation (adresse IP, logs de serveur) conformément à sa propre politique de confidentialité. Ces données sont hors du contrôle de l'éditeur de ce site.
+        </p>
+      </div>
+
+      <!-- Crédits ressources tierces -->
+      <div class="mentions-bloc mentions-bloc-highlight">
+        <h2 class="mentions-titre">3. Ressources tierces utilisées</h2>
+        <p class="mentions-texte">Ce site de démonstration utilise exclusivement des ressources libres de droits ou sous licence ouverte. Détail ci-dessous :</p>
+
+        <div class="credits-grid" style="grid-template-columns: repeat(3,1fr);margin-top:1.5rem;">
+
+          <div class="credit-item">
+            <div class="credit-logo">Pexels</div>
+            <p class="credit-desc">
+              Toutes les photos de piscines (galerie, accueil, réalisations, en-têtes) sont issues de Pexels. Licence Pexels — utilisation commerciale gratuite, aucune attribution requise.
+              <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">pexels.com/license</a>
+            </p>
+          </div>
+
+          <div class="credit-item">
+            <div class="credit-logo">Unsplash</div>
+            <p class="credit-desc">
+              Certaines photos d'ambiance complémentaires proviennent d'Unsplash. Licence Unsplash — utilisation commerciale gratuite.
+              <a href="https://unsplash.com/license" target="_blank" rel="noopener">unsplash.com/license</a>
+            </p>
+          </div>
+
+          <div class="credit-item">
+            <div class="credit-logo">Google Fonts</div>
+            <p class="credit-desc">
+              Les polices <strong>Cormorant Garamond</strong> et <strong>Jost</strong> sont distribuées sous licence SIL Open Font License (OFL). Elles sont hébergées <strong>en local</strong> sur ce serveur — aucune donnée n'est transmise à Google lors de votre visite.
+              <a href="https://fonts.google.com" target="_blank" rel="noopener">fonts.google.com</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Propriété intellectuelle -->
+      <div class="mentions-bloc">
+        <h2 class="mentions-titre">4. Propriété intellectuelle</h2>
+        <p class="mentions-texte">
+          La structure, le code HTML/CSS/JS, les maquettes et le design de ce site ont été réalisés par le développeur web à titre de projet personnel de démonstration. Toute reproduction ou réutilisation commerciale sans accord préalable est interdite. Les ressources tierces (photos, polices) restent soumises à leurs licences d'origine mentionnées ci-dessus.
+        </p>
+      </div>
+
+      <!-- Séparateur visuel -->
+      <div style="border-top:2px solid var(--bleu-profond);padding-top:2rem;margin-top:1rem;">
+        <p class="section-label" style="font-size:0.8rem;margin-bottom:0.5rem;">Partie II</p>
+        <h2 style="font-family:var(--font-titre);font-size:2rem;font-weight:300;color:var(--bleu-profond);line-height:1.1;">Politique de <em style="font-style:italic;color:var(--turquoise);">confidentialité</em></h2>
+        <p class="mentions-texte" style="margin-top:1rem;">
+          Conformément au Règlement Général sur la Protection des Données (RGPD) n°2016/679 du 27 avril 2016 et à la loi Informatique et Libertés du 6 janvier 1978 modifiée.
+        </p>
+      </div>
+
+      <!-- Responsable traitement -->
+      <div class="mentions-bloc">
+        <h2 class="mentions-titre">5. Responsable du traitement</h2>
+        <p class="mentions-texte">
+          Le responsable du traitement des données est <strong>MDZ Piscine</strong>, représentée par Marc Delvaux, joignable à l'adresse : <strong>contact@mdz-piscine.fr</strong>
+        </p>
+      </div>
+
+      <!-- Données collectées -->
+      <div class="mentions-bloc">
+        <h2 class="mentions-titre">6. Données personnelles collectées</h2>
+        <p class="mentions-texte">Dans le cadre de l'utilisation de ce site, les données suivantes peuvent être collectées :</p>
+        <div class="mentions-table">
+          <div class="mentions-table-row mentions-table-header">
+            <span>Donnée</span><span>Finalité</span><span>Durée de conservation</span>
+          </div>
+          <div class="mentions-table-row">
+            <span>Nom, prénom</span><span>Répondre à votre demande</span><span>3 ans</span>
+          </div>
+          <div class="mentions-table-row">
+            <span>Adresse email</span><span>Envoi de la réponse</span><span>3 ans</span>
+          </div>
+          <div class="mentions-table-row">
+            <span>Numéro de téléphone</span><span>Rappel si souhaité</span><span>3 ans</span>
+          </div>
+          <div class="mentions-table-row">
+            <span>Message / description projet</span><span>Traitement de la demande</span><span>3 ans</span>
+          </div>
+          <div class="mentions-table-row">
+            <span>Adresse IP (logs serveur)</span><span>Sécurité et débogage</span><span>12 mois</span>
+          </div>
+        </div>
+        <p class="mentions-texte" style="margin-top:1.2rem;">
+          Ces données sont collectées uniquement sur la base de votre consentement (formulaire de contact). Elles ne sont jamais vendues ni cédées à des tiers à des fins commerciales.
+        </p>
+      </div>
+
+      <!-- Base légale -->
+      <div class="mentions-bloc">
+        <h2 class="mentions-titre">7. Base légale du traitement</h2>
+        <p class="mentions-texte">Le traitement de vos données repose sur :</p>
+        <ul class="mentions-liste">
+          <li>Votre consentement explicite lors de l'envoi du formulaire</li>
+          <li>L'intérêt légitime de MDZ Piscine à répondre aux demandes commerciales</li>
+          <li>L'exécution d'un contrat ou de mesures précontractuelles</li>
+        </ul>
+      </div>
+
+      <!-- Destinataires -->
+      <div class="mentions-bloc">
+        <h2 class="mentions-titre">8. Destinataires des données</h2>
+        <p class="mentions-texte">
+          Vos données sont destinées exclusivement aux collaborateurs de MDZ Piscine habilités à traiter votre demande. Aucune donnée n'est transmise à des tiers, sous-traitants ou partenaires commerciaux sans votre accord préalable.
+        </p>
+      </div>
+
+      <!-- Cookies -->
+      <div class="mentions-bloc">
+        <h2 class="mentions-titre">9. Cookies et traceurs</h2>
+        <p class="mentions-texte">Ce site <strong>n'utilise aucun cookie de traçage</strong>, publicitaire ou analytique. Ce site ne fait appel à <strong>aucune ressource tierce externe</strong> susceptible de collecter vos données :</p>
+        <ul class="mentions-liste">
+          <li><strong>Polices de caractères</strong> — Cormorant Garamond et Jost sont hébergées localement sur notre serveur. Aucune requête n'est envoyée à Google.</li>
+          <li><strong>Photos</strong> — Les images Pexels sont chargées via leur CDN. Consultez la <a href="https://www.pexels.com/privacy-policy/" target="_blank" rel="noopener">politique de confidentialité de Pexels</a>.</li>
+        </ul>
+        <p class="mentions-texte" style="margin-top:1rem;">
+          Aucun bandeau de consentement aux cookies n'est requis car aucun cookie non-essentiel n'est déposé.
+        </p>
+      </div>
+
+      <!-- Droits -->
+      <div class="mentions-bloc">
+        <h2 class="mentions-titre">10. Vos droits</h2>
+        <p class="mentions-texte">Conformément au RGPD, vous disposez des droits suivants :</p>
+        <ul class="mentions-liste">
+          <li><strong>Droit d'accès</strong> — obtenir une copie de vos données</li>
+          <li><strong>Droit de rectification</strong> — corriger des données inexactes</li>
+          <li><strong>Droit à l'effacement</strong> — demander la suppression de vos données</li>
+          <li><strong>Droit à la limitation</strong> — restreindre le traitement</li>
+          <li><strong>Droit à la portabilité</strong> — recevoir vos données dans un format structuré</li>
+          <li><strong>Droit d'opposition</strong> — s'opposer au traitement pour motif légitime</li>
+          <li><strong>Droit de retrait du consentement</strong> — à tout moment, sans rétroactivité</li>
+        </ul>
+        <p class="mentions-texte" style="margin-top:1.2rem;">
+          Pour exercer ces droits : <strong>contact@mdz-piscine.fr</strong><br>
+          Délai de réponse : 1 mois maximum (article 12 RGPD).<br>
+          En cas de désaccord, vous pouvez saisir la <strong>CNIL</strong> : <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener">cnil.fr/fr/plaintes</a>
+        </p>
+      </div>
+
+      <!-- Sécurité -->
+      <div class="mentions-bloc">
+        <h2 class="mentions-titre">11. Sécurité des données</h2>
+        <p class="mentions-texte">
+          MDZ Piscine met en œuvre les mesures techniques et organisationnelles appropriées pour protéger vos données contre tout accès non autorisé, perte, destruction ou divulgation accidentelle : connexion HTTPS, accès restreint aux données, hébergement sécurisé.
+        </p>
+      </div>
+
+      <!-- Modification -->
+      <div class="mentions-bloc">
+        <h2 class="mentions-titre">12. Modification de la politique</h2>
+        <p class="mentions-texte">
+          Cette politique de confidentialité peut être mise à jour à tout moment. Toute modification substantielle sera signalée sur cette page. Nous vous invitons à la consulter régulièrement.
+        </p>
+        <p class="mentions-texte" style="margin-top:1rem;color:#999;font-style:italic;font-size:0.85rem;">
+          Dernière mise à jour : mars 2025
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer-copy">© 2025 MDZ Piscine — Site fictif de démonstration — Tous droits réservés</p>
+      <span class="footer-logo">MDZ Piscine</span>
+      <ul class="footer-links">
+        <li><a data-page="accueil">Accueil</a></li>
+        <li><a data-page="apropos">À propos</a></li>
+        <li><a data-page="realisations">Réalisations</a></li>
+        <li><a data-page="contact">Contact</a></li>
+        <li><a data-page="mentions">Mentions légales</a></li>
+      </ul>
+    </footer>
+
+  </div><!-- /page-mentions -->
+
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
